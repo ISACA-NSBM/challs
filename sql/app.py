@@ -50,9 +50,10 @@ def create():
     return render_template('create.html')
 
 
-@app.route('/<id>', methods=('GET', 'POST'))
-def info(id):
-    post = get_post(id)
+@app.route('/info', methods=('GET', 'POST'))
+def info():
+    post_id = request.args.get('id')
+    post = get_post(post_id)
     return render_template('post.html', post=post)
 
 

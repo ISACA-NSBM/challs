@@ -7,7 +7,7 @@
     <div class="card mt-3">
   <div class="card-body">
 
-            <a href="/{{post['id']}}" style="text-decoration: none;">
+            <a href="/info?id={{post['id']}}" style="text-decoration: none;">
 
     <h5 class="card-title ">
             {{ post['title'] }}
@@ -16,7 +16,7 @@
 
 
             <p class="card-text">{{ post['content'] }}</p>
-            <a href="/{{post['id']}}" class="btn btn-primary">view post</a>
+            <a href="/info?id={{post['id']}}" class="btn btn-primary">view post</a>
             <a href="/{{post['id']}}/edit" class="btn btn-secondary">Edit post</a>
   </div>
 </div>
